@@ -2,6 +2,26 @@
 
 A professional, production-ready React + Tauri template designed for AI-powered development workflows. This template provides a modern foundation for building cross-platform applications with React 19, Vite 6, and Tauri 2, optimized for use with AI development tools like the Prometheus AI platform and Bolt.diy.
 
+## 🚀 Bolt.diy Compatible
+
+This template is **fully compatible** with [Bolt.diy](https://bolt.diy) webcontainer environments! Deploy and develop instantly in your browser with zero setup required.
+
+[![Deploy to Bolt.diy](https://img.shields.io/badge/Deploy%20to-Bolt.diy-blue?style=for-the-badge&logo=stackblitz)](https://bolt.diy)
+
+### One-Click Deployment
+1. Open [Bolt.diy](https://bolt.diy) in your browser
+2. Import this template or paste the repository URL
+3. Start coding immediately with full hot-reload support
+4. All dependencies work seamlessly in the webcontainer environment
+
+### Webcontainer Optimizations
+- **Pure JavaScript dependencies** - No native modules that break in webcontainers
+- **Tailwind CSS v3** - Optimized for browser-based build environments
+- **Standard PostCSS processing** - Compatible with webcontainer limitations
+- **Optimized bundle sizes** - Fast loading in browser environments
+
+> 📖 **Detailed Technical Information**: See [`docs/bolt-diy-compatibility.md`](docs/bolt-diy-compatibility.md) for comprehensive technical details about webcontainer compatibility.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -46,7 +66,7 @@ This template uses a carefully curated modern stack:
 - **React 19** - Latest React with concurrent features and server components support
 - **Vite 6** - Ultra-fast development server and build tool
 - **TypeScript 5.8.3** - Full type safety with strict configuration
-- **Tailwind CSS 4.1.8** - Utility-first CSS framework with v4 features
+- **Tailwind CSS 3.4.0** - Utility-first CSS framework optimized for webcontainer compatibility
 
 ### UI & Components
 - **Shadcn-UI** - Professional, accessible UI components built on Radix UI
@@ -198,9 +218,11 @@ This template is specifically designed for AI-assisted development:
 
 ### Integration with AI Tools
 - **Prometheus AI Platform** - Advanced AI development environment
-- **Bolt.diy** - Natural language to code generation
+- **Bolt.diy** - Natural language to code generation with full webcontainer compatibility
 - **CoPilotKit** - In-app AI features and chatbots
 - **Context-aware development** - MCP server integration
+
+> 🔧 **Webcontainer Compatibility**: This template is fully optimized for bolt.diy's webcontainer environment. See [`docs/bolt-diy-compatibility.md`](docs/bolt-diy-compatibility.md) for technical details.
 
 ### AI-Friendly Rust Code
 - Prioritize simplicity and clarity over cleverness
@@ -301,6 +323,7 @@ src/
 - [Prometheus AI Platform](https://prometheus.ai/)
 - [Bolt.diy Documentation](https://bolt.diy/)
 - [CoPilotKit Guide](https://copilotkit.ai/)
+- [Webcontainer Compatibility Guide](docs/bolt-diy-compatibility.md) - Technical details for bolt.diy development
 
 ## 🆘 Troubleshooting
 
@@ -324,6 +347,20 @@ yarn install
 # Clear Vite cache
 rm -rf node_modules/.vite
 yarn dev
+```
+
+**Webcontainer/Bolt.diy issues:**
+```bash
+# Dependency installation fails
+# Check if dependency has native modules - see docs/bolt-diy-compatibility.md
+
+# Build fails in webcontainer
+# Ensure all dependencies are pure JavaScript
+# Check PostCSS configuration is correct
+
+# Hot reload not working
+# Refresh the browser tab in bolt.diy
+# Check browser console for errors
 ```
 
 ### Getting Help

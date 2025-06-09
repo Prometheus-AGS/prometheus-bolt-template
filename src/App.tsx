@@ -123,7 +123,7 @@ function App(): React.JSX.Element {
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+        <div className="absolute inset-0 bg-grid-pattern bg-grid opacity-5" />
         <div className="relative container mx-auto px-4 py-16 sm:py-24 lg:py-32">
           <div className="text-center max-w-4xl mx-auto">
             <div className="flex justify-center mb-6">
