@@ -33,5 +33,39 @@ export default defineConfig(async () => ({
       // 3. tell Vite to ignore watching `src-tauri`
       ignored: ["**/src-tauri/**"],
     },
+    
+    // TEMPLATE CORS CONFIGURATION
+    // This template is configured with completely unrestricted CORS to ensure
+    // maximum compatibility when used from any domain or environment.
+    //
+    // ⚠️  SECURITY NOTE: This configuration is intended for template/development use.
+    // For production deployments, configure appropriate CORS restrictions based on
+    // your specific security requirements.
+    //
+    // The unrestricted CORS allows:
+    // - Cross-domain API requests without proxy
+    // - Embedded iframe usage from any domain
+    // - CDN and external hosting compatibility
+    // - Development from any local or remote environment
+    cors: {
+      origin: true,  // Allow ANY origin - no restrictions
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS', 'HEAD'],
+      allowedHeaders: ['*'],  // Allow ANY headers
+      credentials: true,  // Allow credentials (cookies, auth headers)
+      preflightContinue: false,  // Handle preflight automatically
+      optionsSuccessStatus: 204  // Proper OPTIONS response status
+    }
+  },
+
+  // Preview server configuration with same unrestricted CORS
+  preview: {
+    cors: {
+      origin: true,  // Allow ANY origin - no restrictions
+      methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS', 'HEAD'],
+      allowedHeaders: ['*'],  // Allow ANY headers
+      credentials: true,  // Allow credentials (cookies, auth headers)
+      preflightContinue: false,  // Handle preflight automatically
+      optionsSuccessStatus: 204  // Proper OPTIONS response status
+    }
   },
 }));
