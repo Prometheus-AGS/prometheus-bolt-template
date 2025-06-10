@@ -31,13 +31,13 @@ All applications generated with this template must use:
 3. Zustand for state management
 4. Zod for validation
 5. Shadcn-UI for user interface components
-6. CoPilotKit for AI integration
 
 ## TypeScript Rules
 
 1. No use of `any` type explicitly or implicitly
 2. Strongly typed properties and function parameters only
 3. Components must never talk directly to stores—only to hooks that set up and talk to the stores on their behalf
+4. Yarn is the package manager for this project. Use `yarn` instead of `npm` or `pnpm`.
 
 ## Rust Language Rules
 
