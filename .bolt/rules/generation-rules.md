@@ -38,6 +38,7 @@ All applications generated with this template must use:
 2. Strongly typed properties and function parameters only
 3. Components must never talk directly to stores—only to hooks that set up and talk to the stores on their behalf
 4. Yarn is the package manager for this project. Use `yarn` instead of `npm` or `pnpm`.
+5. Use kebab case for file names and directories
 
 ## Rust Language Rules
 

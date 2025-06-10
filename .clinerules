@@ -12,7 +12,6 @@
    - Zustand
    - Zod
    - Shadcn-UI for User Interface
-   - CoPilotKit for AI
 
 2. This is a monorepo where ALL applications share code:
    - Mobile and Desktop using Tauri

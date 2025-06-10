@@ -6,7 +6,6 @@
 ## Technology Stack
 - React 19, Vite 6, Zustand, Zod
 - Shadcn-UI for User Interface
-- CoPilotKit for AI
 - Monorepo structure with shared code:
   - Mobile and Desktop using Tauri
   - Web using React/Vite
